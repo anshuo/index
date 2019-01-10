@@ -1,57 +1,53 @@
 <!DOCTYPE html>
-<html >
+<html>
+
 <head>
   <meta charset="UTF-8">
   <title>2048</title>
-  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-
-  
-      <link rel="stylesheet" href="css/style.css">
-
-  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/ans.css">
 </head>
 
 <body>
   <header>
+    <div class="container">
+      <h1><span class="two">2</span><span class="zero">0</span><span class="four">4</span><span class="eight">8</span>
+      </h1>
+      <p class="inspired">Inspired by the original 2048.</p>
+    </div>
+  </header>
   <div class="container">
-    <h1><span>2</span><span>0</span><span>4</span><span>8</span>
-    </h1>
-    <p class="inspired">Inspired by the original 2048.</p>
-  </div>
-</header>
-<div class="container">
-  <div class="directions">
-    <p><strong>HOW TO PLAY:</strong> Use your arrow keys to move the tiles. When two tiles slide into each other, they merge into one!</p>
-  </div>
-  <div class="scores">
-    <div class="score-container best-score">
-      best: 
-      <div class="score">
-        <div id="bestScore">0</div>
+    <div class="directions">
+      <p><strong>怎么玩：</strong>使用箭头键移动瓷砖。当两块瓷砖相互滑动时，它们合并为一块！</p>
+    </div>
+    <div class="scores">
+      <div class="score-container best-score">
+        最高分:
+        <div class="score">
+          <div id="bestScore">0</div>
+        </div>
+      </div>
+      <div class="score-container">
+        分数:
+        <div class="score">
+          <div id="score">0</div>
+          <div class="add" id="add"></div>
+        </div>
       </div>
     </div>
-    <div class="score-container">
-      score: 
-      <div class="score">
-        <div id="score">0</div>
-        <div class="add" id="add"></div>
-      </div>
+    <div class="game">
+      <div id="tile-container" class="tile-container"></div>
+      <div class="end" id="end">游戏结束<div class="monkey">🙈</div><button class="btn not-recommended__item js-restart-btn"
+          id="try-again">Try Again</button></div>
+    </div>
+    <div class="not-recommended">
+      <button class="btn not-recommended__item js-restart-btn" id="restart">重启游戏</button>
+      <span class="not-recommended__annotation"></span>
     </div>
   </div>
-  <div class="game">
-    <div id="tile-container" class="tile-container"></div>
-    <div class="end" id="end">Game Over<div class="monkey">🙈</div><button class="btn not-recommended__item js-restart-btn" id="try-again">Try Again</button></div>
-  </div>
-  
-  <div class="not-recommended">
-    <button class="btn not-recommended__item js-restart-btn" id="restart">Restart Game</button>
-    <span class="not-recommended__annotation"></span>
-  </div>
-  
-</div>
-  
-    <script src="js/index.js"></script>
-
+  <script src="js/index.js"></script>
+  <script src="js/ans.js"></script>
 </body>
+
 </html>
